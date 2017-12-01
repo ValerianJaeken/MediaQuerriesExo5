@@ -32,7 +32,6 @@ body
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
-
 #bloc_page
 {
     width: 900px;
@@ -143,7 +142,7 @@ nav a:hover
     background-color: rgba(24,24,24,0.8);
     color: white;
     font-size: 0.8em;
-    
+
 }
 
 .bouton_rouge
@@ -289,4 +288,58 @@ footer h1
 {
     text-decoration: none;
     color: #760001;
+}
+/*Inferior supports*/
+@media only screen and (max-width : 1000px) {
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article{
+    margin:5px;
+    width: 100%;
+}
+
+  article, aside{
+    flex: 1;
+  }
+
+section{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#photo_zozor img
+{
+  float: left;
+}
+
+#fleche_bulle {
+  top:-12px;
+  left: 30px;
+  transform: rotate(90deg);
+}
+
+footer{
+  flex-wrap: wrap;
+}
+
+#tweet{
+  width: 50%;
+  order: 0;
+}
+
+#mes_photos{
+  flex-wrap: wrap;
+  order: 1;
+}
+
+#mes_amis {
+  order:2;
+  width: 67%;
+
+}
+
 }
